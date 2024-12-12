@@ -76,7 +76,7 @@ def http_download(url, path):
 
 
 def log_counts(values):
-    for k, count in values.value_counts().iteritems():
+    for k, count in values.value_counts().items():
         print("    {:s}:  {:d}/{:d} = {:.2f}".format(k, count, len(values), count/len(values)))
 
 
